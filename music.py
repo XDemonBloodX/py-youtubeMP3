@@ -1,3 +1,4 @@
+from os import error
 import pafy
 import sys
 
@@ -10,7 +11,12 @@ if "https://www.youtube.com/watch?v=" not in link:
     print("Error: bad link -> "+link)
     sys.exit()
 
-video = pafy.new(link)
+try:
+    video = pafy.new(link)
+except :
+    print("video not found")
+    sys.exit()
+
 audiostreams = video.videostreams
 
 for i in audiostreams:
