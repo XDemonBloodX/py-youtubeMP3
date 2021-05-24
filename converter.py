@@ -28,7 +28,6 @@ for file in os.listdir(folderConvert):
 print('conversion finished')
 
 import os
-
 dir_name = "./convert"
 test = os.listdir(dir_name)
 
