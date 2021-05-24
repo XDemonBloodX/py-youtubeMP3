@@ -6,6 +6,10 @@ if len(sys.argv)<2:
 else: 
     link=sys.argv[1]
 
+if "https://www.youtube.com/watch?v=" not in link:
+    print("Error: bad link -> "+link)
+    sys.exit()
+
 video = pafy.new(link)
 audiostreams = video.videostreams
 
