@@ -25,4 +25,13 @@ for file in os.listdir(folderConvert):
     command = f"ffmpeg -i \"{webmFile}\" -vn -ab 128k -ar 44100 -y \"{mp3File}\""
     subprocess.call(command, shell=True)
 
-    print('conversion finished')
+print('conversion finished')
+
+import os
+
+dir_name = "./convert"
+test = os.listdir(dir_name)
+
+for item in test:
+    if item.endswith(".webm"):
+        os.remove(os.path.join(dir_name, item))
