@@ -5,3 +5,5 @@ Install python3.9: https://www.python.org/downloads/
 
 Start installer.py (Create 2 folders for download musics)  
 Install lib: `pip install pafy` in Terminal
+
+For use the app, start with music.py and give 1 args (link video ytb)
