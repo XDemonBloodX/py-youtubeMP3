@@ -1,5 +1,6 @@
 # py-youtubeMP3
-Install FFmpeg on your path for use my scripts: https://www.ffmpeg.org/download.html
+Install FFmpeg on your path for use my scripts: https://www.ffmpeg.org/download.html   
+(For mac: https://emirchouchane.com/tutoriel-ffmpeg/)
 
 Install python3.9: https://www.python.org/downloads/
 
